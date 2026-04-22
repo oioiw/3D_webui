@@ -1,0 +1,67 @@
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #05070f;
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+
+#cesiumContainer {
+  width: 100%;
+  height: 100%;
+}
+
+#panel {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 280px;
+  height: calc(100% - 24px);
+  background: rgba(10, 14, 26, 0.78);
+  border: 1px solid rgba(120, 140, 255, 0.3);
+  box-shadow: 0 0 24px rgba(84, 97, 255, 0.2);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  color: #cdd9ff;
+}
+
+#panel-header {
+  padding: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #cfd3ff;
+  border-bottom: 1px solid rgba(120, 140, 255, 0.25);
+}
+
+#alert-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.alert-item {
+  padding: 10px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(120, 140, 255, 0.12);
+  transition: background 0.15s;
+}
+
+.alert-item:hover {
+  background: rgba(90, 110, 255, 0.12);
+}
+
+.alert-title {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.alert-meta {
+  font-size: 11px;
+  color: #92a0d6;
+}
+
+.alert-level-1 { color: #7ee7ff; }
+.alert-level-2 { color: #a986ff; }
+.alert-level-3 { color: #ff6b7d; }
